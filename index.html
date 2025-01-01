@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>بروفايل اكزايم ماتريكس -CRONUS ZEN MAX</title>
-    <meta name="description" content="إعدادات بروفايل اكزايم ماتريكس لجميع ألعاب الشوتر والتحكمات المختلفة. دعم فني ممتاز وخدمة دعم عن بعد.">
-    <meta name="keywords" content="XIM Matrix, كرونس, سكربتات الألعاب, إعدادات الألعاب, دعم الألعاب, تخفيضات الألعاب, PS5, XBOX, PC, Call of Duty, Battlefield, فورت نايت, Apex Legends, Overwatch, Rainbow Six, PUBG">
-    <meta name="author" content="VIP-SCRIPT.COM">
+    <title>XIM MATRIX - جهاز متميز يجمع بين أحدث التقنيات مثل Smart Translator</title>
+    <meta name="description" content="XIM MATRIX - جهاز متقدم لتعزيز تجربة الألعاب، يدعم PS5, PC, Xbox مع تقنيات Smart Translator و Smart Actions لتحسين الأداء.">
+    <meta name="keywords" content="XIM Matrix, جهاز, الألعاب, تحسين التصويب, Xbox, Playstation, PC, Smart Translator, Smart Actions, Call of Duty, Apex Legends, Overwatch">
+    <meta name="author" content="XIM MATRIX Team">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
 
+        /* إعدادات عامة للجسم */
         body {
             font-family: 'Cairo', sans-serif;
             background-color: #121212;
@@ -24,9 +25,8 @@
             min-height: 100vh;
             flex-direction: column;
             user-select: none; /* تعطيل النسخ */
-            -webkit-user-select: none;
-            -ms-user-select: none;
         }
+
         .container {
             max-width: 800px;
             margin: 0 auto;
@@ -35,288 +35,248 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
-            position: relative; /* Add this to position the WhatsApp icon */
+            position: relative;
         }
+
         h1, h2, h3, h4, h5 {
             color: #ffa500;
             text-align: center;
             margin: 20px 0;
             cursor: pointer;
         }
+
         p, ul, li, a {
             color: #bbbbbb;
             text-align: center;
         }
+
         a {
             color: #1a73e8;
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
         }
-        code {
-            background-color: #333;
-            color: #ffa500;
-            padding: 2px 4px;
-            border-radius: 4px;
-            display: block;
-            margin: 10px 0;
-            text-align: center;
-        }
+
         img {
             max-width: 100%;
             height: auto;
             display: block;
             margin: 20px auto;
         }
-        .small-img {
-            max-width: 300px;
-        }
-        .shooter-img {
-            width: 100px; /* تكبير الصور */
-            height: 100px; /* تكبير الصور */
-            object-fit: cover;
-            margin: 10px;
-        }
-        .shooter-container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        video {
-            width: 100%;
-            height: auto;
-            max-width: 640px;
-            border: none;
-            display: block;
-            margin: 20px auto;
-            border-radius: 10px; /* لإزالة الإطار */
-        }
-        .header {
-            margin-bottom: 40px;
-        }
-        .header p {
-            margin: 5px 0;
-        }
-        .content {
-            display: none;
-            text-align: center;
-        }
-        .content.protected-content {
-            display: none; /* للتأكد من عدم عرض المحتوى المحمي افتراضيًا */
-        }
-        .active + .content {
-            display: block;
-        }
-        .icon {
-            margin-right: 10px;
-            color: #ffa500;
-        }
-        .toggle::after {
-            content: '➕';
-            float: left;
-            font-size: 1.5em;
-            color: #ffa500;
-        }
-        .toggle.active::after {
-            content: '➖';
-        }
-        .toggle {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #333;
+
+        .button {
+            background-color: #292929;
+            color: #ffffff;
             padding: 10px 20px;
             border-radius: 5px;
-            margin: 10px 0;
-            cursor: pointer;
-        }
-        .content-inner {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            padding: 10px 20px;
-            background-color: #444;
-            border-radius: 5px;
-            justify-content: center;
-        }
-        .tab-content {
-            display: none;
-            padding: 20px;
-            background-color: #444;
-            border-radius: 5px;
-            text-align: center;
-        }
-        .tab-content .sub-heading {
             font-weight: bold;
-            margin-top: 20px;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
         }
-        .tab-content .copy-btn {
-            background-color: #ffa500;
-            color: #000;
-            border: none;
-            padding: 5px 10px;
-            cursor: pointer;
-            margin-top: 10px;
-            display: inline-block;
+
+        .button:hover {
+            background-color: #686868;
         }
-        .alert {
-            background-color: #ffcc00;
-            color: #000;
-            padding: 10px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-            text-align: center;
+
+        /* تخصيص التنسيق للأقسام */
+        .section {
+            background: #000000;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
         }
-        .content-inner.centered {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
+
+        .section:hover {
+            background-color: #333;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
         }
-        .content-inner.centered ul {
-            list-style-position: inside;
-            text-align: center;
-        }
-        .icon-shurohat::before {
-            content: "\443322"; /* رمز مخصص */
-            margin-right: 10px;
+
+        .section h2, .section h3 {
             color: #ffa500;
+            margin: 20px 0;
         }
-        .footer {
-            margin-top: 40px;
-            color: #777;
-            text-align: center; /* توسيط النص */
-            width: 100%; /* لجعل العنصر بعرض الصفحة */
-            padding: 10px 0; /* إضافة مسافة عمودية حول النص */
+
+        .section a {
+            color: #ffffff;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s ease;
         }
+
+        .section a:hover {
+            color: #fc3200;
+        }
+
+        /* تخصيص التنسيق لأجهزة الجوال */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            h2 {
+                font-size: 1.8em;
+            }
+
+            .section {
+                padding: 15px;
+            }
+
+            ul li {
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            ul li {
+                font-size: 0.9em;
+            }
+        }
+
         .reviews {
             margin-top: 40px;
             text-align: left;
-            background-color: #000; /* تغيير خلفية المراجعات إلى اللون الأسود */
+            background-color: #000;
             padding: 20px;
             border-radius: 10px;
         }
+
         .reviews h2 {
             color: #ffa500;
             margin-bottom: 20px;
         }
+
         .reviews h2::after {
-            content: '★★★★★'; /* إضافة خمس نجوم بجانب العنوان */
+            content: '★★★★★';
             color: #ffa500;
             margin-right: 10px;
         }
+
         .review {
             background-color: #2e2e2e;
             padding: 10px;
             border-radius: 5px;
             margin-bottom: 10px;
         }
+
         .review p {
             margin: 5px 0;
         }
+
         .review strong {
-            color: #ffa500;
+            color: #4d237c;
         }
-        .whatsapp-icon {
-            width: 60px;
-            height: 60px;
+        /* تنسيق الصورة في قسم التخفيضات */
+.promo-img {
+    width: 100%; /* الصورة تأخذ العرض الكامل للقسم */
+    max-width: 300px; /* تحديد الحد الأقصى للعرض */
+    height: auto; /* الحفاظ على النسبة الأصلية للصور */
+    display: block; /* تأكيد أن الصورة تعرض ككتلة */
+    margin: 0 auto; /* توسيط الصورة داخل الرابط */
+    border-radius: 10px; /* إضافة حواف دائرية للصورة */
+}
+/* تخصيص الخطوط والأبعاد على الشاشات الصغيرة جدًا */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* تقليل حجم النصوص بشكل عام */
+    }
+
+    .features, .settings {
+        padding: 10px; /* تقليل المسافة داخل الأقسام */
+    }
+
+    h2 {
+        font-size: 1.2em; /* تقليل حجم العنوان بشكل أكبر */
+    }
+}
+
+        .popup {
+            display: none;
             position: fixed;
-            bottom: 20px;
-            left: 20px;
-            background-color: #25d366;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            cursor: pointer;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7); /* خلفية شفافة */
             z-index: 1000;
-        }
-        .whatsapp-icon img {
-            width: 35px;
-            height: 35px;
-        }
-        body {
-            background-color: #121212;
-            color: #ffffff;
-            font-family: 'Cairo', sans-serif;
-            display: flex;
             justify-content: center;
-            align-items: flex-start; /* Align to the top of the page */
-            flex-direction: column;
-            margin: 0;
-            padding: 20px;
-        }
-        .reviews-header {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .reviews-header h2 {
-            color: #ffa500;
-            margin: 0;
-            display: inline;
-            font-size: 2em; /* Adjust font size */
-        }
-        .stars {
-            display: flex;
             align-items: center;
-            justify-content: center;
-            margin-top: 5px;
         }
-        .stars span {
-            color: #ffa500;
-            font-size: 1.5em;
-        }
-        .review-count {
-            color: #bbbbbb;
-            margin-right: 5px;
-            font-size: 1em;
-        }
-        .reviews {
-            text-align: center; /* جعل النص في الوسط */
-            background-color: #000; /* تغيير خلفية المراجعات إلى اللون الأسود */
+    
+        .popup-content {
+            background: white;
             padding: 20px;
             border-radius: 10px;
-            width: 100%; /* لجعل المراجعات تمتد بعرض الصفحة */
-            max-width: 800px; /* تحديد عرض أقصى */
-            margin: 0 auto; /* مركزة المراجعات في الصفحة */
+            width: 90%; /* عرض صغير */
+            max-width: 400px; /* عرض أقصى */
+            text-align: center;
+            position: relative; /* لتموضع العناصر الداخلية */
         }
-        .review {
-            background-color: #2e2e2e;
-            padding: 10px;
-            border-radius: 5px;
-            margin-bottom: 10px;
-        }
-        .review p {
-            margin: 5px 0;
-        }
-        .review strong {
-            color: #ffa500;
-            display: block;
-            margin-bottom: 5px;
-        }
-    </style>
-    <script>
-        // تعطيل النقر بالزر الأيمن
-        document.addEventListener('contextmenu', function(e) {
-            e.preventDefault();
-        });
 
-        // تعطيل اختصارات لوحة المفاتيح للعرض
-        document.addEventListener('keydown', function(e) {
-            if (e.ctrlKey && (e.key === 'u' || e.key === 's' || e.key === 'p')) {
-                e.preventDefault();
-            }
-            if (e.key === 'F12') {
-                e.preventDefault();
-            }
-            if ((e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J'))) {
-                e.preventDefault();
-            }
-        });
-    </script>
+        .close-btn {
+            background-color: #00ffcc;
+            color: #181818;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .close-btn:hover {
+            background-color: #00e6b3;
+        }
+        /* تنسيق المربع */
+.advertisement {
+    background: #292929;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #00ffcc;
+    max-width: 800px;
+}
+
+/* تنسيق الصورة داخل المربع */
+.advertisement-image img {
+    width: 100%; /* اجعل الصورة تأخذ العرض الكامل */
+    height: auto; /* احتفظ بنسبة الأبعاد الأصلية */
+    border-radius: 5px;
+    margin-bottom: 15px; /* المسافة بين الصورة والنص */
+}
+
+/* تنسيق النص داخل المربع */
+.advertisement p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* تنسيق الرابط داخل المربع */
+.advertisement a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #00ffcc;
+    color: #181818;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+    </style>
+
 </head>
 <body>
     <div class="container">
@@ -327,195 +287,100 @@
             <h1>قسم السكربتات كـرونس زين + ماكس</h1>
         </div>
 
-        <section class="center">
+        <section class="section">
             <h2>🎉🎉 تخفيضات 🎉🎉</h2>
             <p>🌟 أقوى العروض على الإطلاق 🌟</p>
-            <a href="https://vip-script.com/">
-                <img src="https://vip-script.com/category/zZBgdP" alt="تخفيضات">
+            <a href="https://vip-script.com/" class="button">
+                <!-- إضافة الصورة داخل الرابط -->
+                <img src="https://cdn.salla.sa/form-builder/VNBfVXh2jZQvH0bUTuPgzpKgNmlUVb9Mq7bymA1w.png" alt="تخفيضات" class="promo-img">
             </a>
         </section>
-        <div class="toggle">وصف الطلب بشكل عام</div>
-        <div class="content">
-            <div class="content-inner centered">
-                <h3>قسم السكربتات كـرونس زين + ماكس</h3>
-                <h4>كيفية الطلب</h4>
-                <ul>
-                    <li>حدد نوع التحكم: ماوس أو كنترول.</li>
-                    <li>اختر المنصة: PC، PS5، XBOX.</li>
-                </ul>
-                <h2>اختيار سكربت اللعبة المطلوبة من هنا:</h2>
-                <a href="https://vip-script.com/category/zZBgdP/">https://vip-script.com/category/zZBgdP/</a>
-                <h2>وإذا لم تكن لعبتك معروضة، اختر من هنا:</h2>
-                <a href="https://vip-script.com/ZYKBrjn">https://vip-script.com/ZYKBrjn</a>
+ 
+        <section class="section">
+            <h3>كيفية الطلب</h3>
+            <ul>
+                <li>حدد نوع التحكم: ماوس أو كنترول.</li>
+                <li> دعم  PC، PS5، XBOX.</li>
+            </ul>
 
-                <section class="center">
-                    <h2>يتوفر خدمة الدعم عن بعد (نضبط كل شي)</h2>
-                    <a href="https://vip-script.com/EZOPpGG">رابط الدعم عن بعد</a>
-                </section>
+            <h2>اختيار سكربت اللعبة المطلوبة من هنا:</h2>
+            <a href="https://vip-script.com/category/zZBgdP/"class="button">رابط السكربتات</a>
 
-                <h4>دعم الألعاب:</h4>
-                <p>جميع ألعاب الشوتر:</p>
-                <ul>
-                    <li>Call of Duty: جميع الأجزاء (12, 15, 16, 17, 20 ,19) - مودرين، بلاك أوبس.</li>
-                    <li>فورت نايت</li>
-                    <li>Battlefield: جميع الأجزاء (BF4, BF1, BFV, BF2042).</li>
-                    <li>Apex Legends</li>
-                    <li>Overwatch 2</li>
-                    <li>Rainbow Six (لا تدعم ميزة الإيم إسست).</li>
-                    <li>PUBG (لا تدعم ميزة الإيم إسست).</li>
-                    <li>وباقي ألعاب شوتر أخرى</li>
-                </ul>
+            <h2>وإذا لم تكن لعبتك معروضة، اختر من هنا:</h2>
+            <a href="https://vip-script.com/ZYKBrjn"class="button">رابط اختيار آخر</a>
 
-                <p><a href="https://vip-script.com/category/zZBgdP">رابط المنتج</a></p>
-            </div>
-        </div>
+            <section class="section">
+                <h2>يتوفر خدمة الدعم عن بعد (نضبط كل شيء)</h2>
+                <a href="https://vip-script.com/EZOPpGG" class="button">رابط الدعم عن بعد</a>
+            </section>
+        </section>
 
-        <div class="toggle">دعم جميع انواع التحكم (ماوس وكيبورد - كنترول)</div>
-        <div class="content">
-            <div class="content-inner centered">
-                <img src="https://i.ibb.co/DzWR6HS/Dashboard-003.png" alt="دعم جميع انواع التحكم" class="small-img">
-                <h3>عند الطلب يوصلك السكربت على حسب نوع تحكمك وطلبك (أمثـــــــله)</h3>
-                <ul>
-                    <li>DEFAULT</li>
-                    <li>TACTICALT</li>
-                    <li>TACTICALFLIPPED</li>
-                    <li>STICKANDMOVE</li>
-                    <li>BUMPER</li>
-                </ul>
-            </div>
-        </div>
+        <section class="section">
+            <h4>دعم الألعاب:</h4>
+            <ul>
+                <li>Call of Duty: جميع الأجزاء.</li>
+                <li>فورت نايت</li>
+                <li>Battlefield: جميع الأجزاء.</li>
+                <li>Apex Legends</li>
+                <li>Overwatch 2</li>
+                <li>Rainbow Six</li>
+                <li>PUBG</li>
+            </ul>
+            <p><a href="https://vip-script.com/category/zZBgdP"class="button">رابط المنتج</a></p>
+        </section>
 
-        <div class="toggle">دعم جميع المنصـــــــات</div>
-        <div class="content">
-            <div class="content-inner centered">
-                <img src="https://i.ibb.co/sPBk4k4/Gaming-On-Play-Station-5-002.png" alt="دعم جميع المنصات" class="small-img">
-            </div>
-        </div>
-
-        <div class="toggle">دعم جميع العاب الشوتر</div>
-        <div class="content">
-            <div class="shooter-container">
-                <img src="https://www6.0zz0.com/2024/07/15/12/408019890.jpg" alt="image3" class="shooter-img">
-                <img src="https://i.ibb.co/1Jr6NwG/image.png" alt="image" class="shooter-img">
-                <img src="https://i.ibb.co/VHwyhw3/FORT.jpg" alt="FORT" class="shooter-img">
-                <img src="https://i.ibb.co/pn7hpyC/PUBG.jpg" alt="PUBG" class="shooter-img">
-                <img src="https://i.ibb.co/72gC6fh/RUST.jpg" alt="RUST" class="shooter-img">
-                <img src="https://i.ibb.co/2SS9LxP/vipsza.jpg" alt="vipsza" class="shooter-img">
-                <img src="https://i.ibb.co/0cgJ2Rp/XD.jpg" alt="XD" class="shooter-img">
-                <img src="https://i.ibb.co/4Th6FqP/XIIM.webp" alt="XIIM" class="shooter-img">
-                <img src="https://www6.0zz0.com/2024/07/15/12/744384049.jpg" alt="image1" class="shooter-img">
-                <img src="https://www3.0zz0.com/2024/07/15/12/553637677.jpg" alt="image2" class="shooter-img">
-                <img src="https://www3.0zz0.com/2024/07/15/12/136019771.jpg" alt="image3" class="shooter-img">
-                <img src="https://www8.0zz0.com/2024/07/15/12/535513097.jpg" alt="image4" class="shooter-img">
-                <img src="https://www6.0zz0.com/2024/07/15/12/744384049.jpg" alt="image5" class="shooter-img">
-            </div>
-        </div>
-
-        <div class="toggle"><span class="icon-shurohat"></span>الشروحات والتفعيلات وكل مايخص التعامل مع البروفايل</div>
-        <div class="content protected-content" id="protected-content">
-            <div class="content-inner centered">
-                <h3>PS5 شرح تشغيل القطعة على بلايستيشن</h3>
-                <a href="https://m-r.pw/up/UOLA.mp4">شرح تشغيل القطعة</a>
-                <h3>تحديث القطعة</h3>
-                <a href="https://guide.cronus.support/step2-update-firmware">تحديث القطعة</a>
-                <h3>تركيب السكربت</h3>
-                <a href="https://m-r.pw/up/cOZv.mp4">تركيب السكربت (فيديو)</a> + <a href="https://www.youtube.com/watch?v=KIMfBbiUplA">YouTube</a>
-                <h3>شرح التعامل مع السكربت</h3>
-                <a href="https://m-r.pw/up/Uyrn.mp4">شرح التعامل مع السكربت</a>
-                <h3>صور</h3>
-                <a href="https://m-r.pw/vip-script-MW3">صورة 1</a>
-                <a href="https://m-r.pw/vip-script-2">صورة 2</a>
-                <a href="https://m-r.pw/vip-script-MW3.1">صورة 3</a>
-            </div>
-        </div>
-
-        <hr>
-
-        <p><a href="https://vip-script.com/category/zZBgdP">رابط المنتج</a></p>
-
-    
-        </div>
+        <footer>
+            <p>&copy; 2025 VIP-SCRIPT. جميع الحقوق محفوظة.</p>
+        </footer>
     </div>
-
-    <div class="reviews-header">
-        <h2>المراجعات</h2>
-        <div class="stars">
-            <span>★★★★★</span>
-            <span class="review-count">(320)</span>
-        </div>
-        <p class="review-count">أحدث المراجعات</p>
-    </div>
-    <div class="reviews">
-        <div class="review">
-            <p><strong>عماد المطيري  </strong></p>
-            <p>اسطوررري والله      </p>
-        </div>
-        <div class="review">
-            <p><strong>
-                Faisal Fahad  </strong></p>
-            <p>إمن افضل السكربت الي جربته اراهن عليها</p>
-        </div>
-        <div class="review">
-            <p><strong>فهد المطيري </strong></p>
-            <p>السكربت قوي لايفوتكم والدعم الفني ماقصر معاي ومارح يقصر معاكم ان شاء الله  </p>
-        </div>
-        <div class="review">
-            <p><strong>زياد العتيبي </strong></p>
-            <p>اللي يطلع منه شي يعجز اللسان عن وصفه الله يرزقكم من واسع ابوابه يارب ♥️♥️
-
+</section>
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <!-- محتوى النافذة -->
+        <img src="https://i.ibb.co/PFLbKcp/image.jpg" alt="إعلان" style="width: 100%; height: auto; border-radius: 10px;">
+        <p style="margin-top: 20px; font-size: 16px; color: #333;">هل ترغب كوبون تخفيض؟ انتقل لصفحة الاعلان 
+          
+            
+            
+            
+            
             </p>
+        <div class="buttons">
+            <!-- زر رفض الإعلان -->
+            <button onclick="closePopup()" class="btn reject" style="padding: 10px 20px; background-color: red; color: white; border: none; border-radius: 5px; cursor: pointer;">رفض</button>
+            <!-- زر مواصلة الإعلان -->
+            <a href="https://sdad2ksa.com/" target="_blank" class="btn continue" style="padding: 10px 20px; background-color: green; color: white; text-decoration: none; border-radius: 5px;">مواصلة</a>
         </div>
-        <div class="review">
-            <p><strong>سالم خميس </strong></p>
-            <p>مممممممممتتتااااااااازز!     </p>
-        </div>
-        <div class="review">
-            <p><strong>
-                Saud Almutairi </strong></p>
-            <p>ممتاز وخاصيات واجد تتحكم فيهم   </p>
+        <!-- دائرة العد التنازلي -->
+        <div id="countdown-circle" style="position: absolute; top: -15px; right: -15px; width: 40px; height: 40px; border-radius: 50%; background: #4CAF50; color: white; display: flex; justify-content: center; align-items: center; font-size: 16px; font-weight: bold;">
+            <span id="countdown-number">5</span>
         </div>
     </div>
-    <div class="footer">
-        <p>&copy; VIP-SCRIPT.COM</p>
-    </div>
+</div>
 
-    <a href="https://api.whatsapp.com/send?phone=966541696659&text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20..%20%20%D8%B9%D9%86%D8%AF%D9%8A%20%D8%A5%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%20%20https%3A%2F%2Fvip-script.com%2F" class="whatsapp-icon">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-    </a>
 
-    <script>
-        document.querySelectorAll('.toggle').forEach(item => {
-            item.addEventListener('click', () => {
-                const content = item.nextElementSibling;
-                const activeContent = document.querySelector('.content:not(.protected-content):not([style*="display: none"])');
-                if (activeContent && activeContent !== content) {
-                    activeContent.previousElementSibling.classList.remove('active');
-                    activeContent.style.display = 'none';
-                }
-                if (content.classList.contains('protected-content')) {
-                    const password = prompt('يرجى إدخال الرمز السري لعرض المحتوى:');
-                    if (password === '443322') {
-                        content.classList.remove('protected-content');
-                        content.style.display = 'block';
-                    } else {
-                        alert('الرمز غير صحيح. حاول مرة أخرى.');
-                    }
-                } else {
-                    item.classList.toggle('active');
-                    content.style.display = content.style.display === 'block' ? 'none' : 'block';
-                }
-            });
-        });
+<script>
+    // عرض الإعلان بعد 5 ثوانٍ
+    window.onload = function() {
+        const popup = document.getElementById('popup');
+        const countdownNumber = document.getElementById('countdown-number');
 
-        function copyCode(button) {
-            var codeText = button.parentElement.textContent;
-            navigator.clipboard.writeText(codeText).then(() => {
-                alert('تم نسخ الكود بنجاح!');
-            }).catch(err => {
-                alert('فشل في نسخ الكود');
-            });
-        }
-    </script>
+        let countdown = 5; // الوقت بالثواني
+        const countdownInterval = setInterval(() => {
+            countdown--; // تقليل العد التنازلي
+            countdownNumber.textContent = countdown; // تحديث الرقم في الدائرة
 
+            if (countdown === 0) {
+                clearInterval(countdownInterval); // إيقاف العداد
+                popup.style.display = 'flex'; // عرض النافذة المنبثقة
+            }
+        }, 1000); // تحديث كل ثانية
+    };
+
+    // دالة إغلاق النافذة المنبثقة
+    function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+    }
+</script>
 </body>
 </html>
